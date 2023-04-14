@@ -1,4 +1,19 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-image: url(ft);
 
+}
+.form-register{
+    width: 400px;
+    background:#151779;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color:white
 }

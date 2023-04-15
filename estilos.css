@@ -20,6 +20,7 @@ body {
 ----cfondoForm1:rgba(1, 80, 88, 0.39);
 ----cfondoForm2:rgb(129,193,202);
 ----cnegro:black;
+----ctexto: rgb(14,81,88);
 }
 
 /*------formulario------*/
@@ -44,11 +45,17 @@ body {
     letter-spacing: 3px;
 }
 .form-input{
-    border: 3px solid red;
     margin-bottom: 30px;
 }
 .form-input label {
     display: block;
+    margin-top: 10px;
+    color: var(----ctexto);
+}
+
+.form-input input {
+    width: 100%;
+    border: none;
 }
 
 

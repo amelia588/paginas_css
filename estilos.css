@@ -1,0 +1,43 @@
+/*-------generales-----*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    /*border: 3px solid red;*/
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+:root {
+----cfondoForm1:rgba(1, 80, 88, 0.39);
+----cfondoForm2:rgb(129,193,202);
+----cnegro:black;
+}
+
+/*------formulario------*/
+.form {
+    /*border:  3px solid green;*/
+    border-top: 2px solid black;
+    max-width: 400px;
+    padding: 30px 50px;
+    margin: auto;
+    margin-top: 10px;
+    background: linear-gradient(0deg,
+    var(----cfondoForm1)0%,
+    var(----cfondoForm2)50%);
+  
+}
+.form-titulo {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+

@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos</title>
-    <link rel="stylesheet" href="datos.css">
+    <title>formulario Resgistro</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>REGISTRO DE DATOS</h1>  
-    <main>
-        <section class="form register">
-        <form action="">
-          <label for="name">
-            <span>What's your name?</span>
-            <input type="text" name="name" id="name" autocomplete="name" required>
-          </label>
-          <label for="last name">
-            <span>What's your last name?</span>
-            <input type="text" name="last name" id="last name" autocomplete="last name" required>
-          </label>
-          <label for="password">
-            <span>What's your password?</span>
-            <input type="password" name="password" id="password" autocomplete="password" required>
-          </label>
-          <label for="email">
-            <span>¿What's your email?</span>
-            <input type="email" name="correo" id="correo" autocomplete="email" required>
-          </label>
-          <label for="phone number">
-            <span>What's your number?</span>
-            <input type="#" name="phono number" id="phone number" autocomplete="phone number" required>
-          </label>
-          <label for="age">
-            <span>how old are you?</span>
-            <input type="date" name="age" id="age" autocomplete="age" required>
-          </label>
-          <label for="country">
-            <span>Wich country do you live?</span>
-            <input type="text" name="country" id="country" autocomplete="country" required>
-          </label>
-          <input type="radio" name="hm" value="h"> Hombre
-          <input type="radio" name="hm" value="m"> Mujer
-          <input type="submit" value="submit">
-          <input type="reset" value="reset">
-        </form>
-        </section>
-    </main>
+    <div class="container">
+      <form action="" class="form">
+        <p class="form-titulo">regístrate</p>
+        <div>
+          <input type="text" id="myname">
+          <label for="myname">Nombre</label>
+          <p></p>
+        </div>
+        <div>
+          <input type="text" id="surname">
+          <label for="surname">Apellidos</label>
+          <p></p>
+        </div>
+        <div>
+          <input type="mail" id="email">
+          <label for="email">correo electrónico</label>
+          <p></p>
+        </div>
+        <div>
+          <input type="#" id="mobile">
+          <label for="mobile">celular</label>
+          <p></p>
+        </div>
+        <div>
+          <input type="password" id="password">
+          <label for="password">contraseña</label>
+          <p></p>
+        </div>
+        <div>
+          <input type="password" id="repeatPassword">
+          <label for="repeatPassword">Repetir contraseña</label>
+          <p></p>
+        </div>
+        <div>
+          <input type="checkbox" id="termsAndCoditions">
+          <label for="termsAndCoditions">He leído y acepto los</label>
+          <a href="#">Términos y Condiciones</a>
+        </div>
+        <div>
+          <input type="submit" value="enviar">
+        </div>
+      </form>
+    </div>
 
 </body>
 </html>

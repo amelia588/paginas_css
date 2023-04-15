@@ -56,6 +56,10 @@ body {
 .form-input input {
     width: 100%;
     border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid var(----ctexto);
+
 }
 
 

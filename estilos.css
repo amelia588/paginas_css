@@ -17,10 +17,14 @@ body {
 }
 
 :root {
+----cfondo:rgb(207,211,212);
 ----cfondoForm1:rgba(1, 80, 88, 0.39);
 ----cfondoForm2:rgb(129,193,202);
 ----cnegro:black;
 ----ctexto: rgb(14,81,88);
+----ctextoDark:rgb(1,35,39);
+----cblanco:white;
+----error:rgb(184,31,31);
 }
 [type="checkbox"] {
     display: none;
@@ -42,6 +46,19 @@ body {
     position: absolute;
     left: -14px;
 }
+
+[type="checkbox"]{
+    display: none;
+}
+[type="checkbox"]:checked + label::before{
+    background: var(----cnegro);
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+[type="checkbox"]:checked + label::before{
+    color: var(----cnegro);
+}
+
 
 /*------formulario------*/
 .form {
@@ -80,6 +97,42 @@ body {
     background: none;
     border-bottom: 1px solid var(----ctexto);
 
+}.form-termsAndconditions{
+    margin: 15px;
+    position: relative;
+    color: var(----ctexto);
+    font-size: 12px;
 }
+.form-termsAndconditions label::before{
+    content:"";
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(----cnegro);
+    position: absolute;
+    left: -14px;
+}
+.form-boton input{
+    background: var(----cnegro);
+    color: var(----cblanco);
+    padding: 10px 50px;
+    font-size: 25px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    border:none;
+}
+.form-boton input:hover{
+    background: var(ctextoJark);
+    transition: 0,5s;
+}.mensajeerror{
+    color:var(----error);
+    margin-top: 0px;
+    font-size: 12;
+    font-weight: bold;
+    letter-spacing: 1px;
 
-
+}
+.menssajeCorrecto{
+    text-align: center;
+    font-weight: bold;
+}
